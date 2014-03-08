@@ -1,0 +1,121 @@
+body {
+
+}
+
+a {
+
+}
+
+a:visited {
+
+}
+a:hover {
+
+}
+a:active {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+
+}
+
+blockquote {
+
+}
+
+strong {
+
+}
+
+em {
+
+}
+
+ul#nav {
+	
+}
+
+ul#nav>li {
+	
+}
+
+ul#nav>li ul {
+	
+}
+
+#nav ul li>a {
+	color: red;
+}
+
+#nav ul li.current_page_item>a, #nav ul li.current-cat>a {
+	
+}
+
+#nav ul li>a:hover {
+	
+}
+
+
+/* 
+	Now time to style specific elements 
+	Again here you may have to adjust selectors to fit your page structure and naming
+	conventions. 
+*/
+
+/* Style your page header */
+header h1>a {
+	
+}
+
+/* Blog description */
+header p {
+
+}
+
+/* post styles. Style  post elements that still need styles. 
+IF you use the post_class(). The post container should have the class post.  */
+
+/* Style post container */
+.post {
+	/* May be good to add some margin-bottom here to separate posts.  */
+}
+
+/* Use post descendant selector to style other elements within the post. */
+
+
+/* style the more link */
+/* You can customize the more link message by editing 
+the_content( "Your Custom more link message" ) */
+a.more-link {
+	/* Style the more link. This is an anchor tag to do some things you may have to 
+	set it's display style to block. */
+}
+
+/* You will have to customize the selectora to style the time/date, 
+comments and categories. In my example files I used the class names:
+*/
+
+.post-time {
+
+}
+
+.post-categories {
+
+}
+
+.post-comments {
+
+}
+
+
+
+
+
+
+
+

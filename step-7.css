@@ -1,0 +1,88 @@
+
+
+body {
+
+}
+
+a {
+
+}
+
+a:visited {
+
+}
+a:hover {
+
+}
+a:active {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+
+}
+
+blockquote {
+
+}
+
+strong {
+
+}
+
+em {
+
+}
+
+
+/* Special styles - You may need to adjust the selectors here based on how your pages were created! */
+ul#nav {
+	/* Style the container ul for the sidebar */
+}
+
+ul#nav>li {
+	/* This list item is the title heading for each group of links in the sidebar */
+	/* This is a good place to set margin between each group of listed links */
+}
+
+ul#nav>li ul {
+	/* Each group of nested links set the list style and other properties */
+	/* Set the font size for the sidebar list headings here */
+}
+
+
+/* Style the color of the links */
+#nav ul li>a {
+	color: red;
+}
+
+
+/* Style the selected styles for page and category links */
+#nav ul li.current_page_item>a, #nav ul li.current-cat>a {
+	color: green;
+}
+
+/* set the hover style for links */
+#nav ul li>a:hover {
+	color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+This files contains snippets of PHP, Wordpress Template tags, that you can use in your 
+Wordpress themes. 
+
+Head - Use these tags in the head of your document. 
+
+Set the content type and characters set. No need to modify this use it as is. 
+
+<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; 
+charset=<?php bloginfo('charset'); ?>" /> 
+
+<?php bloginfo('name'); ?>				Get the name of the site. As set in Settings general.
+<?php wp_title("|", true, "left"); ?> 	Gets the title of the current page. 
+
+Link to style.css in your theme folder. Use this as is. 
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen,projection" />
+
+You must include this tag just inside the closing </head> tag. This allows WP to important 
+data to the head of your document as needed. 
+<?php wp_header(); ?>
+
+In the body 
+Header 
+
+<?php bloginfo('name'); ?> 				Prints the title of your site. 
+<?php bloginfo('description'); ?>		Prints the description of the site. 
+
+<?php wp_header(); ?>
+
+Use this block to create the sidebar. 
+
+<ul>
+	<?php if ( !dynamic_sidebar("main-sidebar-1") ): ?>
+	<!-- pages -->
+	<?php wp_list_pages(); ?>  
+	<!-- categories -->
+	<?php wp_list_categories(); ?>
+	<!-- login -->
+	<li>Meta
+		<ul>
+			<?php wp_register(); ?>
+			<!-- Admin login/logout links -->
+			<li><?php wp_loginout(); ?></li>
+		</ul>
+	</li>
+	<?php endif; ?>
+</ul>
+
+
+This is the loop. It will display the main content of the site. 
+
+ <!-- *********** The Loop - main content *************** -->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<!-- Site content here -->
+<?php endwhile; else: ?>
+	<!-- Error message: No content found here -->
+<?php endif; ?>    
+<!-- *********** The Loop - main content *************** -->
+
+
+These elements all go within the loop. 
+
+<?php the_permalink(); ?>	Generates the URL to the current post or page. Use this in the href of an anchor tag. 
+<?php the_title(); ?>		Generates the title of the current post or page. 
+
+Use these like this: 
+<h3>
+	<a href="<?php the_permalink(); ?>">
+		<?php the_title(); ?>
+	</a>
+</h3>
+
+<?php the_content(); ?> Displays the content of the current post or page. 
+
+
+This block goes into a functions.php
+
+<?php // No spaces or line returns in front of this line!
+if ( function_exists('register_sidebar') ) {
+	// Sidebar on right
+	register_sidebar( array(
+		'id' => 'main-sidebar-1',
+		'name' => 'Main Sidebar 1',
+		'description' => 'Sidebar located in the left column',
+		'before_title'=> '',
+		'after_title' => ''
+	) );
+}
+
+
+
+Some more snippets that can be used in the Loop.
+
+<?php post_class(); ?> 
+
+Adds classes relevant to the current post. Use in the post wrapper in place of the the 
+regular class attribute. You can add other class names inside the (), for example:
+post_class( "grid_2 other-class" )
+
+<?php the_time(); ?> 	Displays the time of the current post. 
+Customize the date with all of the options here: 
+http://codex.wordpress.org/Function_Reference/the_time
+
+<?php the_date(); ?> 	Displays the date of the current post. 
+
+<?php the_category(); ?> 
+
+
+
+The Footer
+
+This tag must go below your footer, just above the closing body tag. It allows WP to 
+place information into the bottom of the page as needed. 
+<?php wp_footer(); ?>
+
+
+
+
+
+
+
+
+
