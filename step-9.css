@@ -1,0 +1,163 @@
+body {
+
+}
+
+a {
+
+}
+
+a:visited {
+
+}
+a:hover {
+
+}
+a:active {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+
+}
+
+blockquote {
+
+}
+
+strong {
+
+}
+
+em {
+
+}
+
+ul#nav {
+	
+}
+
+ul#nav>li {
+	
+}
+
+ul#nav>li ul {
+	
+}
+
+#nav ul li>a {
+	color: red;
+}
+
+#nav ul li.current_page_item>a, #nav ul li.current-cat>a {
+	
+}
+
+#nav ul li>a:hover {
+	
+}
+
+header h1>a {
+	
+}
+
+header p {
+
+}
+
+.post {
+	
+}
+
+a.more-link {
+	
+}
+
+.post-time {
+
+}
+
+.post-categories {
+
+}
+
+.post-comments {
+
+}
+
+
+/* Time to style images in posts. You can set the sizes for images in the admin panel. 
+Look under Settings>Media. You can use the styles below as is, but you may want to change 
+the margin to fit your layout. */
+
+img.alignright {
+	float:right; 
+	margin:0 0 1em 1em
+}
+
+img.alignleft {
+	float:left; 
+	margin:0 1em 1em 0
+}
+
+img.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto
+}
+
+.alignright {
+	float:right; 
+}
+
+.alignleft {
+	float:left; 
+}
+
+.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto
+}
+
+/* Don't forget to style the img tag. You can assign a border or  */
+
+a img {
+	border:0
+}
+
+a:hover img { 
+	border:solid red 1px; 
+}
+
+p img { 
+	padding: 0; 
+	max-width: 100%; 
+}
+
+/* Style the image with a caption. */
+.wp-caption { 
+	margin: 5px; 
+	padding: 5px; 
+	border: solid 1px #E5E5FF; 
+	background: #E5F2FF; 
+	font-size:90%; 
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
