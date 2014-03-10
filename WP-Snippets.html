@@ -5,6 +5,21 @@ Wordpress themes.
 
 
 
+
+style.css - This file must begin with this comment block. Edit the information as 
+described. 
+
+/*   
+Theme Name: Name your them
+Theme URI: A url for your them
+Description: Describe your theme 
+Author: Your name
+Author URI: Your url
+*/
+
+
+index.php - 
+
 Head - Use these tags in the head of your document.
 Set the content type and characters set. No need to modify this use it as is. 
 
@@ -103,10 +118,8 @@ content will appear in the body
  <!-- *********** The Loop - main content *************** -->
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<!-- Site content here. Everything here will be duplicated for each post displayed. -->
-	
 <?php endwhile; else: ?>
 	<!-- Error message: No content found here -->
-	
 <?php endif; ?>    
 <!-- *********** The Loop - main content *************** -->
 
@@ -151,6 +164,10 @@ Some more snippets that can be used in the Loop.
 
 
 
+Add the comment template. This inserts the default comment form when you view a single 
+post or page. 
+<?php comments_template(); ?>
+
 
 Adds classes relevant to the current post. Use in the post wrapper in place of the the 
 regular class attribute. You can add other class names inside the (), for example:
@@ -158,7 +175,7 @@ post_class( "grid_2 other-class" )
 
 <?php the_time(); ?> 	Displays the time of the current post. 
 Customize the date with all of the options here: 
-http://codex.wordpress.org/Function_Reference/the_time
+http://codex.wordpress.org/Formatting_Date_and_Time
 
 <?php the_date(); ?> 	Displays the date of the current post. 
 <?php the_category(); ?> Displays the categories for the current post. 

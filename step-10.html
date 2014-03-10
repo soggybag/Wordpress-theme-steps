@@ -75,8 +75,22 @@
 						<!-- Display the contents of the post -->
 						<?php the_content(); ?>
 		
-						<!-- Display the date and category for a post. Note the parameters shown here format the date and time. -->
+						<!-- **********************************************************
+						Formatting the data and time of a post. 
+						Display the date and category for a post. Note the parameters shown 
+						here format the date and time. Use the guide here: http://codex.wordpress.org/Formatting_Date_and_Time 
+						Each element of the time and date is represented by a character. For example,
+						in the example below: 'F jS Y' might look like this September 24th 2013.
+						F September (Full month)
+						j 24 (day of the month without leading 0)
+						S th (ordinal suffix, th, nd etc. as in 4th or 2nd)
+						Y 2013 (full Year) 
+						Any characters that appear and are not recognized as are printed.
+						For example: 'F jS, Y' would appear as September 24th, 2013 -->
+						
 						<p class="post-time"><?php the_time('F jS Y'); ?> at <?php the_time('g:i a'); ?></p>
+						<!-- ********************************************************** -->
+						
 						<p class="post-categories"><?php the_category(', '); ?></p>
 						<p class="post-comments"><?php comments_number('No comment', '1 comment', '% comments'); ?></p>
 						

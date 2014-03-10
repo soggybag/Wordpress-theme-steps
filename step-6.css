@@ -26,8 +26,31 @@ p {
 
 }
 
-blockquote {
+blockquote { /* Style the blockquote - here's a few ideas. */
+	font-size: 21px;
+	color: #371616;
+	position: relative;
+	opacity: 0.5;
+}
 
+/* Use the :before selector to add an element "before" the blockquote content. 
+Here I aded a curly quote. The content property sets the text that appears before! */
+blockquote:before { 
+  color: #371616;
+  content: '\201C'; /* Make a curly left quote: http://monc.se/kitchen/129/rendering-quotes-with-css */
+  font-family: Georgia;
+  font-size: 46px;
+  position: absolute;
+  left: -30px;
+}
+
+blockquote:after { 
+  color: #371616;
+  content: '\201D';
+  font-family: Georgia;
+  font-size: 46px;
+  position: absolute;
+  bottom: 0;
 }
 
 strong {
