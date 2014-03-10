@@ -166,9 +166,17 @@ Some more snippets that can be used in the Loop.
 
 Add the comment template. This inserts the default comment form when you view a single 
 post or page. 
+
 <?php comments_template(); ?>
 
 
+
+List the comments when viewing as single 
+
+<?php wp_list_comments(); ?> 
+
+
+ 
 Adds classes relevant to the current post. Use in the post wrapper in place of the the 
 regular class attribute. You can add other class names inside the (), for example:
 post_class( "grid_2 other-class" )

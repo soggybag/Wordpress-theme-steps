@@ -94,7 +94,12 @@
 						<p class="post-categories"><?php the_category(', '); ?></p>
 						<p class="post-comments"><?php comments_number('No comment', '1 comment', '% comments'); ?></p>
 						
-						
+						<-- ********* Comment form ******** 
+						Include the comments template -->
+						<?php comments_template(); ?>
+						<!-- list comments -->
+						<?php wp_list_comments(); ?> 
+						<-- ******************************* -->
 					</div>
 					<!-- ********************* Customize posts ******************** -->	
 				<?php endwhile; else: ?>
