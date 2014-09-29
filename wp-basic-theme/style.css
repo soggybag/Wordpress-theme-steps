@@ -1,0 +1,19 @@
+/*   
+Theme Name: Web 3 Theme Fall 2014
+Theme URI: http://webdevils.com
+Description: An example theme for Web 3
+Author: Mitchell Hudson
+Author URI: http://webdevils.com
+*/
+
+body {
+	font-family: Helvetica;
+	margin: 0;
+}
+
+
+
+.header-wrap {
+	background: #525252;
+	color: #dadada;
+}

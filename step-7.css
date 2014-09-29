@@ -1,42 +1,6 @@
-
-
-body {
-
-}
-
-a {
-
-}
-
-a:visited {
-
-}
-a:hover {
-
-}
-a:active {
-
-}
-
-h1, h2, h3, h4, h5, h6 {
-
-}
-
-p {
-
-}
-
-blockquote {
-
-}
-
-strong {
-
-}
-
-em {
-
-}
+Now style the naivgation. The side bar is built from ul, li, and a tags. It will 
+most likely look different from ul, li tags that appear in posts. 
+Here are a few ideas to get you started. 
 
 
 /* Special styles - You may need to adjust the selectors here based on how your pages were created! */

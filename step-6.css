@@ -1,18 +1,31 @@
+
+
+Start adding styles. Start with basic styles that style the common tags. 
+Start with a basic font and color applied to the body tag. 
+Add a style for links. 
+Add styles for headings. 
+Remember headings and links will appear in the page header, and in the content, 
+and you may want to style these differently. For now give them same, most common
+style, later you can style the exceptions. 
+Style the blockquote, strong, em, and other tags. 
+
+
 /* All of the basic tags */
 
 body {
-
+	font-family: Helvetica;
+	color: gray;
 }
 
 a {
-
+	color: red;
 }
 
 a:visited {
 
 }
 a:hover {
-
+	color:fuchsia;
 }
 a:active {
 

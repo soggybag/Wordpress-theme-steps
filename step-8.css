@@ -1,65 +1,5 @@
-body {
-
-}
-
-a {
-
-}
-
-a:visited {
-
-}
-a:hover {
-
-}
-a:active {
-
-}
-
-h1, h2, h3, h4, h5, h6 {
-
-}
-
-p {
-
-}
-
-blockquote {
-
-}
-
-strong {
-
-}
-
-em {
-
-}
-
-ul#nav {
-	
-}
-
-ul#nav>li {
-	
-}
-
-ul#nav>li ul {
-	
-}
-
-#nav ul li>a {
-	color: red;
-}
-
-#nav ul li.current_page_item>a, #nav ul li.current-cat>a {
-	
-}
-
-#nav ul li>a:hover {
-	
-}
-
+Now its time to apply styles to exceptions. Style the page header, and other tags that 
+dont follow your common styles. 
 
 /* 
 	Now time to style specific elements 
@@ -94,6 +34,9 @@ the_content( "Your Custom more link message" ) */
 a.more-link {
 	/* Style the more link. This is an anchor tag to do some things you may have to 
 	set it's display style to block. */
+	display: block;
+	border-top: 3ps solid red;
+	text-align: right;
 }
 
 /* You will have to customize the selectora to style the time/date, 

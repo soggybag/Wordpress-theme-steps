@@ -1,92 +1,15 @@
-body {
+Images will need some special styles. WP will add class names for alignment. You 
+need to style these classes. 
 
-}
+.alignleft
+.alignright
+.aligncenter
 
-a {
+Look at the example below. To get an idea what to do with this. 
 
-}
-
-a:visited {
-
-}
-a:hover {
-
-}
-a:active {
-
-}
-
-h1, h2, h3, h4, h5, h6 {
-
-}
-
-p {
-
-}
-
-blockquote {
-
-}
-
-strong {
-
-}
-
-em {
-
-}
-
-ul#nav {
-	
-}
-
-ul#nav>li {
-	
-}
-
-ul#nav>li ul {
-	
-}
-
-#nav ul li>a {
-	color: red;
-}
-
-#nav ul li.current_page_item>a, #nav ul li.current-cat>a {
-	
-}
-
-#nav ul li>a:hover {
-	
-}
-
-header h1>a {
-	
-}
-
-header p {
-
-}
-
-.post {
-	
-}
-
-a.more-link {
-	
-}
-
-.post-time {
-
-}
-
-.post-categories {
-
-}
-
-.post-comments {
-
-}
+The caption for an image will get a class name .wp-caption. You should style this also. 
+Be sure to make an image with a caption! Without an example it would hard to style these. 
+Might be good to make a few images with various options like alignment and captions. 
 
 
 /* Time to style images in posts. You can set the sizes for images in the admin panel. 
@@ -106,7 +29,7 @@ img.alignleft {
 img.aligncenter {
 	display: block; 
 	margin-left: auto; 
-	margin-right: auto
+	margin-right: auto;
 }
 
 .alignright {
@@ -123,10 +46,18 @@ img.aligncenter {
 	margin-right: auto
 }
 
+.wp-cation {
+	
+}
+
+.wp-caption-text {
+	
+}
+
 /* Don't forget to style the img tag. You can assign a border or  */
 
 a img {
-	border:0
+	border:0;
 }
 
 a:hover img { 
@@ -146,6 +77,14 @@ p img {
 	background: #E5F2FF; 
 	font-size:90%; 
 	color: black;
+}
+
+.wp-caption p {
+	
+}
+
+.wp-caption p.wp-caption-text {
+	
 }
 
 

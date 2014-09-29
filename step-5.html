@@ -1,3 +1,11 @@
+
+Read the comments here closely. There is a lot to look at. 
+At this stage the goal is get the basic structure in place. 
+Only work on the major elements. Wait to apply styles until 
+you have the basic structure placing elements on the page 
+where they should appear. 
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -18,7 +26,7 @@
 		<!-- must include this for WP - This ag loads any other info WP might require into the head tag -->
 		<?php wp_head(); ?>
 	</head>
-	<body>
+	<body <?php body_class("my own class here"); ?>>
 	
 		<div><!-- container -->
 			<div>
@@ -60,8 +68,13 @@
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				
 					<!-- ************************ Customize posts *********************** -->
-					<!-- use a wrapper div around the post. The post_class() assigns relavent class names to each post -->
-					<div <?php post_class(); ?>
+					<!-- 
+						*********************************************************************************************
+						use a wrapper div around the post. The post_class() assigns relavent class names to each post
+						Add additional classes inside the ().  
+						*********************************************************************************************
+					-->
+					<div <?php post_class("grid_9 post-thumb hello "); ?>>
 						
 						<!-- * 
 							Everything inside of this block is repeat once for each post.
@@ -73,7 +86,7 @@
 						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 	
 						<!-- Display the contents of the post -->
-						<?php the_content(); ?>
+						<?php the_content("Read more"); ?>
 		
 						<!-- Display the date and category for a post. Note the parameters shown here format the date and time. -->
 						<p class="post-time"><?php the_time('F jS Y'); ?> at <?php the_time('g:i a'); ?></p>

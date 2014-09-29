@@ -1,3 +1,7 @@
+
+Imagine the structure of your site from your wire frame. There will be more WP template tags and other code before you are done. 
+For now try and picture what tags you will need to create the structure and layout that you want. 
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,17 +11,18 @@
 	
 		<!-- In this example the header and footer expand to the edges of the browser -->
 	
-		<div><!-- header wrapper -->
-			<div><!-- container -->
+		<div><!-- header wrapper stretches to extents of browser -->
+			<div class="container_12"><!-- container -->
 				<div>
 					<!-- header -->
 				</div>
+				<div class="clear"></div>
 			</div><!-- container -->
 		</div>	
 		
-		<div><!-- container -->
+		<div class="container_12"><!-- container -->
 			<div>
-				<!-- sidebar left -->
+				<!-- sidebar -->
 			</div>
 		
 			<div>
@@ -26,11 +31,12 @@
 		</div><!-- container -->
 		
 		<div><!-- footer wrapper -->
-			<div><!-- container -->
+			<div class="container_12"><!-- container -->
 				<div>
 					<!-- footer -->
 				</div>
 			</div><!-- container -->
+			<div class="clear"></div>
 		</div>
 	
 	</body>
